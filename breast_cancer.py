@@ -51,7 +51,7 @@ st.write(df)
 def predict():
     features = np.array(["RADIUS MEAN", "PERIMETER MEAN", "CONCAVE POINTS MEAN", "RADIUS WORST", "PERIMETER WORST", "AREA WORST", "CONCAVE POINTS WORST"])
     prediction = model.predict(df)
-    if prediction[0] == 1:
+    if prediction[0] == 0:
         st.success("The breast cancer is BENIGN")
     else:
         st.error("The breast cancer is MALIGNANT")  
