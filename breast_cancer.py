@@ -61,4 +61,5 @@ predict_button = st.button("Predict")
 if predict_button == True:
     predict()
 
+print("hello")
  
